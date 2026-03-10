@@ -5,6 +5,12 @@ This project allows users to perform CRUD operations on movies and manage movie 
 
 ---
 
+HOME ROUTE
+
+<img width="1920" height="1080" alt="Screenshot 2026-03-10 124916" src="https://github.com/user-attachments/assets/fe6dedb7-a8e4-4d84-8278-3c5f92c29d4a" />
+
+
+
 ## 🚀 Features
 
 * Create a new movie
@@ -89,3 +95,4 @@ Create a **.env** file in the root directory and add:
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 ```
+

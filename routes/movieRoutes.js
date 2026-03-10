@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post("/add", upload.single("image"), movieController.createMovie);
 
-router.get("/allMovie", movieController.allMovies);
+router.get("/allMovie", movieController.allMovie);
 
 router.get("/:id", movieController.getMovie);
 

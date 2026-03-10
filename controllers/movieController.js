@@ -39,12 +39,12 @@ const createMovie = async (req, res, next) => {
 };
 
 
-const allMovies = async (req, res, next) => {
+const allMovie= async (req, res, next) => {
   try {
 
-    const movies = await Movie.find({});
+    const movie = await Movie.find({});
 
-    if (movies.length === 0) {
+    if (movie.length === 0) {
       return res.status(200).json({
         message: "No movies found",
       });
@@ -52,7 +52,7 @@ const allMovies = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
-      movies,
+      movie,
     });
 
   } catch (error) {
@@ -165,7 +165,7 @@ const deleteMovie = async (req, res, next) => {
 
 export default {
   createMovie,
-  allMovies,
+  allMovie,
   getMovie,
   updateMovie,
   deleteMovie,
